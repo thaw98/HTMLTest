@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
+        *{
+            font-family: 'Ubuntu', sans-serif;
+        }
+        form{
+            background-color: #03a9f4;
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 20px #000000;
+            line-height: 20px;
+        }
+        .title{
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color:#002466;
+            text-shadow: -1px 2px 1px #ffffff;
+        }
+        textarea{
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 100%
+        }
+        table{
+            margin: auto;
+            border: none;
+            text-align: left;
+        }
+        .btn{
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #ffffff;
+            padding: 10px;
+            background-color: #002466;
+            color: #ffffff;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        .btn:hover{
+            border: 2px solid #ffffff;
+            background-color: #ffffff;
+            color: #002466;
+        }
+        input[type=text]{
+            border-right: none;
+            border-left:none;
+            border-top:none;
+            border-bottom:3px sold black;
+            border-radius: 5px;
+            background-color: #03a9f4;
+            width: 100%;
+            }
+        input[type=text]:focus{
+            background-color:white;
+        }
+        .title span{
+            color: #000000;
+        }
+        select{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1 class="title"><i class="fa-solid fa-envelope"></i>Test <span>Form</span></h1>
+        <table>
+            <tr>
+                <td><label for="name">Name</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="email" placeholder="johndoe@email.com"></td>
+            </tr>
+            <tr>
+                <td><label for="address" id="address">Address</label></td>
+            </tr>
+            <tr>
+                <td><textarea name="address" id="address" cols="30" rows="10" placeholder="No. 123xxx"></textarea><br/>
+                </td>
+            </tr>
+        </table>
+                <hr/>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br/>
+        <label for="education">Education</label>
+        <select name="education" id="education" value="education">
+            <option value="Business">Business</option>
+            <option value="Health">Health</option>
+        </select>
+        <hr/>
+        <button class="btn"><i class="fa-solid fa-paper-plane"></i> Send</button>
+    </form>
+</body>
+</html>
